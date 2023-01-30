@@ -33,9 +33,9 @@ function Projects({}: Props): ReactElement {
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
-                  Case Study {i + 1} of {projects.length}:
+                  Make your Ticket {i + 1} of {projects.length}:
                 </span>{" "}
-                UPS clone
+                Track yor Requests
               </h4>
               <p className="text-lg text-center md:text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
