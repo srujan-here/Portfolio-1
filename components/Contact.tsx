@@ -34,16 +34,18 @@ export const Contact = (props: Props) => {
           <div className="flex items-center space-x-5 justify-center">
            
             <PhoneIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
-            <div className="text-2x1">+1234567890</div>
+            <div className="text-2x1">+91 9951293739</div>
           </div>
           <div className="flex items-center space-x-5 justify-center">
           
             <EnvelopeIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
-            <div className="text-2xl">envelope</div>
+            <div className="text-2xl">puttasrujan1212@gmail.com</div>
           </div>
           <div className="flex items-center space-x-5 justify-center">
 
             <MapPinIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
+            <div className="text-2xl">India,Telangana</div>
+
 
           </div>
         </div>
