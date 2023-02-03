@@ -37,14 +37,14 @@ function Projects({}: Props): ReactElement {
                 </span>{" "}
                 Track yor Requests
               </h4>
-              <p className="text-lg text-center md:text-left">
+              <div className="text-lg text-center md:text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Consequatur, eos! Et velit delectus assumenda dolor quos.
                 Accusamus dolore dolor iusto nulla inventore rem cumque minus.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 eveniet accusamus saepe minus excepturi consectetur a qui
                 quaerat voluptate nihil?
-              </p>
+              </div>
             </div>
           </div>
         ))}

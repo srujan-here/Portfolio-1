@@ -30,14 +30,14 @@ export const ExperienceCard = (props: Props) => {
 
             <div className='text-white px-0 md:px-10'>
                 <h4 className='text-4xl font-light'>Software Development Intern</h4>
-                <p className='font-bold text-2xl mt-1'>Local Entrepreneurs</p>
+                <div className='font-bold text-2xl mt-1'>Local Entrepreneurs</div>
                 <div className='flex space-x-2 my-2'>
                     <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__480.png" className='h-10 w-10 rounded-full'/>
                     <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__480.png" className='h-10 w-10 rounded-full'/>
                     <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__480.png" className='h-10 w-10 rounded-full'/>
 
                 </div>
-                <p className='uppercase py-5 text-gray-300'>Started work... -Ended...</p>
+                <div className='uppercase py-5 text-gray-300'>Started work... -Ended...</div>
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
                     <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </li>
                     <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </li>

@@ -21,8 +21,7 @@ export const Contact = (props: Props) => {
         max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        {" "}
-        Contact{" "}
+        Contact
       </h3>
 
       <div className=" flex flex-col space-v-10">
@@ -33,30 +32,52 @@ export const Contact = (props: Props) => {
 
         <div className="space-y-10 my-5">
           <div className="flex items-center space-x-5 justify-center">
-            {" "}
+           
             <PhoneIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
-            <p className="text-2x1">+1234567890</p>
+            <div className="text-2x1">+1234567890</div>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            {" "}
-            <EnvelopeIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />{" "}
-            <p className="text-2xl">envelope</p>
+          
+            <EnvelopeIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
+            <div className="text-2xl">envelope</div>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            {" "}
+
             <MapPinIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">123 Developer Lane</p>{" "}
+
           </div>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col space-y-2 w-fit mx-auto"
+        >
           <div className="flex space-x-2">
-            <input {...register('name')} placeholder="Name" className="contactInput" type="text" />
-            <input {...register('email')} placeholder="Email" className="contactInput" type="email" />
+            <input
+              {...register("name")}
+              placeholder="Name"
+              className="contactInput"
+              type="text"
+            />
+            <input
+              {...register("email")}
+              placeholder="Email"
+              className="contactInput"
+              type="email"
+            />
           </div>
 
-          <input {...register('subject')} placeholder="Subject" className="contactInput" type="text" />
-          <textarea {...register('message')} placeholder="Message" className="contactInput" />
+          <input
+            {...register("subject")}
+            placeholder="Subject"
+            className="contactInput"
+            type="text"
+          />
+          <textarea
+            {...register("message")}
+            placeholder="Message"
+            className="contactInput"
+          />
 
           <button
             type="submit"

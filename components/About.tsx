@@ -36,7 +36,7 @@ export const About = (props: Props) => {
             className="rounded-full -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 object-cover md:rounded-lg md:w-56 md:h-95 xl:w-[500px] xl:h-[500px]" />
 <div className="space-y-10 px-0 md:px-10">
     <h4 className="text-4xl font-semibold">Here is a <span className="underline decoration-[#F7AB0A]/50">little</span>  background</h4>
-    <p className="text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit totam molestias facilis voluptatem ullam odio, aliquid, quibusdam, obcaecati blanditiis officiis excepturi doloremque asperiores! Itaque unde aspernatur, ullam quas corrupti inventore sunt sint laborum dolorem facilis iure quod. Perspiciatis, nobis optio.</p>
+    <div className="text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit totam molestias facilis voluptatem ullam odio, aliquid, quibusdam, obcaecati blanditiis officiis excepturi doloremque asperiores! Itaque unde aspernatur, ullam quas corrupti inventore sunt sint laborum dolorem facilis iure quod. Perspiciatis, nobis optio.</div>
 </div>
 
         </motion.div>
@@ -46,4 +46,3 @@ export const About = (props: Props) => {
     )
 }
 
-// -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-56 md:h-95 xl:w-[500px] xl:h-[600px]

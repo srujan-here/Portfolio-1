@@ -47,14 +47,14 @@ export default function Home() {
         <Contact />
       </section>
 
-      <Link href='#srujan'>
+      {/* <Link href='#srujan'> */}
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className=" flex items-center justify-center">
             <img className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer" src="https://cdn.pixabay.com/photo/2017/05/11/12/24/green-2304008__480.png" alt="" />
 
           </div>
         </footer>
-      </Link>
+      {/* </Link> */}
 
 
     </div>
