@@ -53,7 +53,7 @@ export default defineType({
     }),
     defineField({
       name: 'socils',
-      title: 'Socils',
+      title: 'Socials',
       type: 'array',
       of: [{type: 'reference', to: {type: 'social'}}],
     }),
