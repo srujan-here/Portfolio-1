@@ -5,6 +5,7 @@ import { PageInfo } from "../typings";
 import { urlfor } from "../sanity";
 import Link from "next/link";
 import { FaBeer } from "react-icons/fa";
+import Image from "next/image";
 
 interface Props {
   pageinfo: PageInfo;
@@ -25,10 +26,12 @@ export const Srujan = ({ pageinfo }: Props) => {
   return (
     <div className="flex flex-col items-center justify-center space-y-7 h-screen overflow-hidden text-white">
       <BackgroundCircle />
-      <img
+      <Image
         src={urlfor(pageinfo.heroImage).url()}
         className="relative rounded-full h-32 w-32 mx-auto"
         alt=""
+        width="32"
+        height="32"
       />
       <h2 className="text-sm uppercase text-gray-400 tracking-[10px]">
         {pageinfo.role}

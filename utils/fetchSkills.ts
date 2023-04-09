@@ -1,4 +1,4 @@
-import { Skill } from "../typings";
+import { TSkill } from "../typings";
 
 export const fetchSkills = async () => {
   const res = await fetch(
@@ -7,6 +7,6 @@ export const fetchSkills = async () => {
   const data = await res.json();
   // console.log(data);
 
-  const skills: Skill[] = data.skills;
+  const skills: TSkill[] = data.skills;
   return skills;
 };
