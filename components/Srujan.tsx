@@ -28,10 +28,10 @@ export const Srujan = ({ pageinfo }: Props) => {
       <BackgroundCircle />
       <Image
         src={urlfor(pageinfo.heroImage).url()}
-        className="relative rounded-full h-32 w-32 mx-auto"
+        className="relative rounded-full h-28 w-28 mx-auto"
         alt=""
-        width="32"
-        height="32"
+        width="50"
+        height="50"
       />
       <h2 className="text-sm uppercase text-gray-400 tracking-[10px]">
         {pageinfo.role}

@@ -53,6 +53,8 @@ function Projects({ projects }: Props): ReactElement {
                   key={tech._id}
                   src={urlfor(tech.image).url()}
                   alt="m"
+                  width="10"
+                  height="10"
                   />
                 ))}
                 </div>
