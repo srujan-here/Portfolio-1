@@ -20,43 +20,42 @@ export interface PageInfo extends SanityBody {
   heroImage: Image;
   name: string;
   phoneNumber: string;
-  profilePic:Image;
-  role:string,
+  profilePic: Image;
+  role: string;
 }
 
-export interface Technology extends SanityBody{
-    _type:"social",
-    title:string,
-    url:string
+export interface Technology extends SanityBody {
+  _type: "skill";
+  title: string;
+  progress: number;
+  image: Image;
 }
-export interface Skill extends SanityBody{
-    _type:"skill",
-    image:Image,
-    progress:number,
-    title:string
+export interface TSkill extends SanityBody {
+  _type: "skill";
+  image: Image;
+  progress: number;
+  title: string;
 }
 
-export interface Project extends SanityBody{
-    title:string,
-    _type:"project",
-    image:Image,
-    linktoBuild:string,
-    summary:string,
-    technologies:Technology[],
-    
+export interface Project extends SanityBody {
+  title: string;
+  _type: "project";
+  image: Image;
+  linktoBuild: string;
+  summary: string;
+  technologies: Technology[];
 }
-export interface Experience extends SanityBody{
-  _type:"experience",
-  company:string,
-  companyImage:Image,
-  dateEnded:string,
-  dateStarted:string,
-  isCurrentlyWorkinghere:boolean,
-  jobTitle:string,
-  points:string[],
-  profilePic:Image,
-  technologies:Technology[]
-
+export interface Experience extends SanityBody {
+  _type: "experience";
+  company: string;
+  companyImage: Image;
+  dateEnded: string;
+  dateStarted: string;
+  isCurrentlyWorkinghere: boolean;
+  jobTitle: string;
+  points: string[];
+  profilePic: Image;
+  technologies: Technology[];
 }
 export interface Social extends SanityBody {
   _type: "social";

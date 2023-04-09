@@ -1,12 +1,12 @@
-import { PageInfo } from "../typings";
+import { Experience, PageInfo } from "../typings";
 
-export const fetchSkills = async () => {
+export const fetchExperience = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_Base_URL}/api/getmyPageInfo`
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getmyExperience`
   );
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
 
-  const pageinfo: PageInfo[] = data.pageinfo;
-  return pageinfo;
+  const experience: Experience[] = data.experience;
+  return experience;
 };

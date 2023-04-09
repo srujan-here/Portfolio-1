@@ -1,13 +1,19 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { BackgroundCircle } from "./BackgroundCircle";
+import { PageInfo } from "../typings";
+import { urlfor } from "../sanity";
+import Link from "next/link";
+import { FaBeer } from "react-icons/fa";
 
-interface Props {}
+interface Props {
+  pageinfo: PageInfo;
+}
 
-export const Srujan = (props: Props) => {
+export const Srujan = ({ pageinfo }: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, The Name's Srujan Putta",
+      `Hi, The Name's ${pageinfo ? pageinfo.name : "Srujan Putta"}`,
       "Full Stack Developer",
       "<ButLovestoCode />",
       "Repeat!",
@@ -20,19 +26,23 @@ export const Srujan = (props: Props) => {
     <div className="flex flex-col items-center justify-center space-y-7 h-screen overflow-hidden text-white">
       <BackgroundCircle />
       <img
-        src="https://media.licdn.com/dms/image/C5603AQHYFuYrPEO1Jw/profile-displayphoto-shrink_400_400/0/1660064870612?e=1680739200&v=beta&t=7M2Rj6CbQ9s3f4HefR5v52lgsiuzRfXPf2j0Pd6r7ig"
+        src={urlfor(pageinfo.heroImage).url()}
         className="relative rounded-full h-32 w-32 mx-auto"
         alt=""
       />
-        <h2 className="text-sm uppercase text-gray-400 tracking-[15px]">
-          Software Developer
-        </h2>
-      <div>
-
-      <h1 className="text-white text-4xl lg:text-5xl font-semibold px-10">
-        <span className="mr-3">{text}</span>
-        <Cursor cursorColor="red" />
-      </h1>
+      <h2 className="text-sm uppercase text-gray-400 tracking-[10px]">
+        {pageinfo.role}
+      </h2>
+      <div className="z-20">
+        <h1 className="text-white text-4xl lg:text-5xl font-semibold px-10">
+          <span className="mr-3">{text}</span>
+          <Cursor cursorColor="red" />
+        </h1>
+      </div>
+      <div className="pt-5 text-gray-500">
+        {/* <Link href="#about" className="px-3">
+        About
+        </Link> */}
       </div>
     </div>
   );
