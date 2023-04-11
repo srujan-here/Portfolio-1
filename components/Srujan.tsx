@@ -26,16 +26,16 @@ export const Srujan = ({ pageinfo }: Props) => {
   return (
     <div className="flex flex-col items-center justify-center space-y-7 h-screen overflow-hidden text-white">
       <BackgroundCircle />
-      <Image
+      {/* <Image
         src={urlfor(pageinfo.heroImage).url()}
         className="relative rounded-full h-28 w-28 mx-auto"
         alt=""
         width="50"
         height="50"
-      />
-      <h2 className="text-sm uppercase text-gray-400 tracking-[10px]">
+      /> */}
+      {/* <h2 className="text-sm uppercase text-gray-400 tracking-[10px]">
         {pageinfo.role}
-      </h2>
+      </h2> */}
       <div className="z-20">
         <h1 className="text-white text-4xl lg:text-5xl font-semibold px-10">
           <span className="mr-3">{text}</span>

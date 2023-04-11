@@ -27,7 +27,7 @@ export const Header = ({ socials }: Props) => {
         }}
         className="flex flex-row items-center"
       >
-        {socials.map((data) => (
+        {/* {socials.map((data) => (
           <SocialIcon
             key={data._id}
             url={data.url}
@@ -35,7 +35,7 @@ export const Header = ({ socials }: Props) => {
             bgColor="transparent"
             target="_blank"
           />
-        ))}
+        ))} */}
       </motion.div>
 
       <motion.div

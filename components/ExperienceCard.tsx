@@ -43,17 +43,17 @@ export const ExperienceCard = ({ experience }: Props) => {
 
           ))} */}
         </div>
-        <div className="uppercase py-5 text-gray-300">
+        {/* <div className="uppercase py-5 text-gray-300">
           {new Date(experience.dateStarted).toDateString()}-
           {experience.isCurrentlyWorkinghere
             ? "Present"
             : new Date(experience.dateStarted).toDateString()}
-        </div>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        </div> */}
+        {/* <ul className="list-disc space-y-4 ml-5 text-lg">
           {experience.points.map((data, i) => (
             <li key={i}>{data} </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </article>
   );
