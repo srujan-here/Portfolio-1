@@ -1,5 +1,5 @@
 import React from "react";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+// import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Link from "next/link";
 
@@ -36,15 +36,15 @@ export const Contact = (props: Props) => {
 
         <div className="space-y-10 my-5">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
+            {/* <PhoneIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" /> */}
             <div className="text-2x1">+91 9951293739</div>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
+            {/* <EnvelopeIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" /> */}
             <div className="text-2xl">puttasrujan1212@gmail.com</div>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" />
+            {/* <MapPinIcon className="text-[#c5e9cb] h-7 w-7 animate-pulse" /> */}
             <div className="text-2xl">India,Telangana</div>
           </div>
         </div>
