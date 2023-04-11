@@ -34,26 +34,26 @@ export const ExperienceCard = ({ experience }: Props) => {
         <h4 className="text-4xl font-light">{experience.jobTitle}</h4>
         <div className="font-bold text-2xl mt-1">{experience.company}</div>
         <div className="flex space-x-2 my-2">
-          {/* {experience.technologies.map((technology, i) => (
+          {experience.technologies.map((technology, i) => (
             <img
               key={i}
               className="h-10 w-10 rounded-full"
               
             />
 
-          ))} */}
+          ))}
         </div>
-        {/* <div className="uppercase py-5 text-gray-300">
+        <div className="uppercase py-5 text-gray-300">
           {new Date(experience.dateStarted).toDateString()}-
           {experience.isCurrentlyWorkinghere
             ? "Present"
             : new Date(experience.dateStarted).toDateString()}
-        </div> */}
-        {/* <ul className="list-disc space-y-4 ml-5 text-lg">
+        </div>
+        <ul className="list-disc space-y-4 ml-5 text-lg">
           {experience.points.map((data, i) => (
             <li key={i}>{data} </li>
           ))}
-        </ul> */}
+        </ul>
       </div>
     </article>
   );

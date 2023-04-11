@@ -9,11 +9,11 @@ import { Srujan } from "../components/Srujan";
 import { WorkExperience } from "../components/WorkExperience";
 import { GetStaticProps } from "next";
 import { PageInfo, Experience, Project, Social, TSkill } from "../typings";
-// import { fetchExperience } from "../utils/fetchExperience";
-// import { fetchProject } from "../utils/fetchProjects";
-// import { fetchSocial } from "../utils/fetchSocials";
-// import { fetchSkills } from "../utils/fetchSkills";
-// import { fetchPageInfo } from "../utils/fetchPageInf";
+import { fetchExperience } from "../utils/fetchExperience";
+import { fetchProject } from "../utils/fetchProjects";
+import { fetchSocial } from "../utils/fetchSocials";
+import { fetchSkills } from "../utils/fetchSkills";
+import { fetchPageInfo } from "../utils/fetchPageInf";
 import { FaArrowUp } from "react-icons/fa";
 
 type Props = {
@@ -85,22 +85,22 @@ export default function Home({
   );
 }
 
-// export const getStaticProps: GetStaticProps<Props> = async () => {
-//   const pageInfo: PageInfo = await fetchPageInfo();
-//   const projects: Project[] = await fetchProject();
-//   const experience: Experience[] = await fetchExperience();
-//   const socials: Social[] = await fetchSocial();
-//   const skills: TSkill[] = await fetchSkills();
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo();
+  const projects: Project[] = await fetchProject();
+  const experience: Experience[] = await fetchExperience();
+  const socials: Social[] = await fetchSocial();
+  const skills: TSkill[] = await fetchSkills();
 
-//   // console.log(pageInfo);
-//   return {
-//     props: {
-//       pageInfo,
-//       projects,
-//       experience,
-//       socials,
-//       skills,
-//     },
-//     revalidate: 10,
-//   };
-// };
+  // console.log(pageInfo);
+  return {
+    props: {
+      pageInfo,
+      projects,
+      experience,
+      socials,
+      skills,
+    },
+    revalidate: 10,
+  };
+};

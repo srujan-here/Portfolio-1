@@ -21,7 +21,7 @@ function Projects({ projects }: Props): ReactElement {
           Projects
         </h3>
         <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin  scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-          {/* {projects.map((project, i) => (
+          {projects.map((project, i) => (
             <div
               className="w-screen flex-shrink-0 snap-center flex flex-col space-y-3 items-center justify-center p-20 md:p-48 lg:mb-4 h-screen"
               key={i}
@@ -63,7 +63,7 @@ function Projects({ projects }: Props): ReactElement {
                 </div>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
         <div className="w-full absolute top-[30%] bg-[#c5e9cb]/60 left-0 h-[500px]-skew-y-12" />
       </motion.div>
